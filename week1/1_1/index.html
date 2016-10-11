@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="百度搜索">
+    <meta name="description" content="百度一下，你就知道">
+    <title>百度一下，你就知道</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #nav a {
+            white-space: nowrap;
+        }
+
+        #wd {
+            width: 70%;
+        }
+
+        #footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #footer span {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!--logo start-->
+        <div id="baidulogo">
+            <img alt="百度搜索" src="images/bd_logo1.png" width="270" height="129" />
+        </div>
+        <!--logo end-->
+        <!--导航 start-->
+        <div id="nav">
+            <a href="http://www.nuomi.com/?cid=002540" title="百度糯米">糯米</a>
+            <a href="http://news.baidu.com" title="百度新闻">新闻</a>
+            <a href="http://www.hao123.com" title="上网导航">hao123</a>
+            <a href="http://map.baidu.com" title="百度地图">地图</a>
+            <a href="http://v.baidu.com" title="百度视频">视频</a>
+            <a href="http://tieba.baidu.com" title="百度贴吧">贴吧</a>
+            <a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F" title="登录百度">登录</a>
+            <a href="http://www.baidu.com/gaoji/preferences.html" title="百度设置">设置</a>
+            <a href="http://www.baidu.com/more/" title="百度更多产品">更多产品</a>
+        </div>
+        <!--导航 end-->
+        <!--表单 start-->
+        <div id="baiduform">
+            <form action="https://www.baidu.com/s" method="get">
+                <input id="wd" name="wd" value="" maxlength="255" />
+                <input type="submit" value="百度一下" />
+            </form>
+        </div>
+        <!--表单 end-->
+        <!--footer start-->
+        <div id="footer">
+            <p>
+                <span>&copy;2015 Baidu</span>
+                <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a>
+                <span>京ICP证030173号</span>
+            </p>
+        </div>
+        <!--footer end-->
+    </div>
+</body>
+</html>
