@@ -1,0 +1,51 @@
+﻿body{
+    padding:0;
+    margin:0;
+}
+.article{
+    height:300px;
+    background:green;
+    overflow:hidden;
+    _zoom:1
+}
+/*双飞翼封装中间部分*/
+.middle{
+    float:left;
+    width:100%;
+}
+/*双飞翼中间部分*/
+.inner{
+    margin-left:150px;
+    margin-right:100px;
+    background:brown;
+}
+/*双飞翼左侧部分*/
+.left{
+    width:150px;
+    float:left;
+    background:#0094ff;
+    margin-left:-100%;
+}
+/*双飞翼右侧部分*/
+.right{
+    width:100px;
+    float:left;
+    background:#00ffff;
+    margin-left:-100px;
+}
+
+/*高度自适应*/
+.middle,.inner,.left,.right{
+    margin-bottom:-9999px;
+    padding-bottom:9999px;
+}
+/*头部*/
+.header{
+    background:#b200ff;
+    height:100px;
+}
+/*尾部*/
+.footer{
+    background:#ffd800;
+    height:100px;
+}

@@ -1,0 +1,321 @@
+﻿body{
+    margin:0;
+    padding:0;
+}
+h1{
+    text-align:center;
+}
+.wrapper{
+    margin:0 auto;
+    position:relative;
+    width:400px;
+    height:500px;
+}
+
+/*直升机*/
+.helicopter {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid red;
+    transform-origin: 100px 0;
+    animation:animationAll 5s linear 0s infinite;
+    -webkit-animation:animationAll 5s linear 0s infinite;
+    -moz-animation:animationAll 5s linear 0s infinite;
+    -o-animation:animationAll 5s linear 0s infinite;
+}
+
+/*顶部螺旋桨*/
+.prop-top{
+    position:absolute;
+    top:0px;
+    left:0px;
+    transform-origin:100px 5px;
+    animation:animationTop 0.2s ease-in-out 0s infinite;
+    -webkit-animation:animationTop 0.2s ease-in-out 0s infinite;
+    -moz-animation:animationTop 0.2s ease-in-out 0s infinite;
+    -o-animation:animationTop 0.2s ease-in-out 0s infinite;
+}
+.prop-top .item{
+    /*螺旋桨叶：长100，宽26*/
+    position:absolute;
+    transform-origin:100px 0px;
+    width:0px;
+    height:6px;
+    border-bottom:10px solid transparent;
+    border-left:100px solid #0000ff;
+    border-right:0px;
+    border-top:10px solid transparent;
+    border-radius:5px;
+}
+.prop-top .item:nth-child(2) {
+    transform:rotateY(180deg);
+}
+
+/*飞机主体部分*/
+.prop-body{
+    position:absolute;
+}
+/*主体连接上螺旋桨*/
+.prop-body .bodytop{
+    position:absolute;
+    left:85px;
+    top:3px;
+    width:30px;
+    height:20px;
+    border-radius:50%;
+    background:#0000ff;
+}
+.prop-body .bodyconn{
+    position:absolute;
+    left:90px;
+    top:10px;
+    width:0px;
+    height:0px;
+    border-bottom:30px solid #0000ff;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:0px;
+}
+/*机舱*/
+.prop-body .bodymid{
+    position:absolute;
+    width:140px;
+    height:100px;
+    border-radius:50%;
+    background:#0000ff;
+    top:38px;
+    left:30px;
+}
+/*机舱窗户*/
+.prop-body .bodymid div{
+    background:#fff;
+    position:absolute;
+    top:20px;
+    left:10px;
+    width:50px;
+    height:40px;
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50%;
+    border-top-right-radius:5%;
+    border-bottom-right-radius:5%;
+}
+.prop-body .bodymid div:nth-child(2){
+    transform-origin:right center;
+    transform:rotate(180deg) translate(-15px);
+}
+/*主体连接尾螺旋桨*/
+.prop-body .bodyback{
+    position: absolute;
+    top: 76px;
+    left: 166px;
+    width: 0px;
+    height: 8px;
+    border-left: 100px solid #0000ff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 0px;
+}
+.prop-body .bodyback>div{
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    background: #0000ff;
+    border-radius: 50%;
+}
+
+/*尾螺旋桨*/
+.prop-back {
+    position: absolute;
+    top: 82px;
+    left: 226px;
+    transform-origin: 40px 5px;
+    animation:animationBack 0.2s ease-in-out 0s infinite;
+    -webkit-animation:animationBack 0.2s ease-in-out 0s infinite;
+    -o-animation:animationBack 0.2s ease-in-out 0s infinite;
+    -moz-animation:animationBack 0.2s ease-in-out 0s infinite;
+}
+/*尾螺旋桨叶片*/
+.prop-back .item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 6px;
+    border-left: 40px solid #0000ff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 0px;
+    transform-origin: 40px 7px;
+    transform: rotateZ(60deg);
+}
+.prop-back .item:nth-child(2){
+    transform:rotateZ(240deg);
+}
+
+/*起落架*/
+.prop-footer{
+    position:absolute;
+    top: 133px;
+    left: 73px;
+}
+/*起落架 支撑杆*/
+.prop-footer .item{
+    position:absolute;
+    background:#0000ff;
+    width:6px;
+    height:30px;
+    border-radius:2px;
+    transform:rotate(20deg);
+}
+.prop-footer .item:nth-child(2){
+    transform:rotate(-20deg) translateX(40px) translateY(15px);
+}
+/*起落架底部*/
+.prop-footer .foot{
+    position: absolute;
+    top: -23px;
+    left: -26px;
+    width: 100px;
+    height: 50px;
+    border-bottom: 6px solid #0000ff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/*飞机移动动画*/
+@keyframes animationAll{
+    from,to{}
+    0%{transform:rotateY(0deg) scale(1) translateY(200px);}
+    10%{transform:rotateY(0deg) scale(0.8) translateY(180px);}
+    20%{transform:rotateY(0deg) scale(0.6) translateY(160px);}
+    30%{transform:rotateY(0deg) scale(0.4) translateY(140px);}
+    40%{transform:rotateY(0deg) scale(0.2) translateY(120px);}
+    50%{transform:rotateY(180deg) scale(0.1) translateY(100px);}
+    60%{transform:rotateY(180deg) scale(0.2) translateY(120px);}
+    70%{transform:rotateY(180deg) scale(0.4) translateY(140px);}
+    80%{transform:rotateY(180deg) scale(0.6) translateY(160px);}
+    90%{transform:rotateY(180deg) scale(0.8) translateY(180px);}
+    100%{transform:rotateY(0deg) scale(1) translateY(200px);}
+}
+@-webkit-keyframes animationAll{
+    from,to{}
+    0%{transform:rotateY(0deg) scale(1) translateY(200px);}
+    10%{transform:rotateY(0deg) scale(0.8) translateY(180px);}
+    20%{transform:rotateY(0deg) scale(0.6) translateY(160px);}
+    30%{transform:rotateY(0deg) scale(0.4) translateY(140px);}
+    40%{transform:rotateY(0deg) scale(0.2) translateY(120px);}
+    50%{transform:rotateY(180deg) scale(0.1) translateY(100px);}
+    60%{transform:rotateY(180deg) scale(0.2) translateY(120px);}
+    70%{transform:rotateY(180deg) scale(0.4) translateY(140px);}
+    80%{transform:rotateY(180deg) scale(0.6) translateY(160px);}
+    90%{transform:rotateY(180deg) scale(0.8) translateY(180px);}
+    100%{transform:rotateY(0deg) scale(1) translateY(200px);}
+}
+@-moz-keyframes animationAll{
+    from,to{}
+    0%{transform:rotateY(0deg) scale(1) translateY(200px);}
+    10%{transform:rotateY(0deg) scale(0.8) translateY(180px);}
+    20%{transform:rotateY(0deg) scale(0.6) translateY(160px);}
+    30%{transform:rotateY(0deg) scale(0.4) translateY(140px);}
+    40%{transform:rotateY(0deg) scale(0.2) translateY(120px);}
+    50%{transform:rotateY(180deg) scale(0.1) translateY(100px);}
+    60%{transform:rotateY(180deg) scale(0.2) translateY(120px);}
+    70%{transform:rotateY(180deg) scale(0.4) translateY(140px);}
+    80%{transform:rotateY(180deg) scale(0.6) translateY(160px);}
+    90%{transform:rotateY(180deg) scale(0.8) translateY(180px);}
+    100%{transform:rotateY(0deg) scale(1) translateY(200px);}
+}
+@-o-keyframes animationAll{
+    from,to{}
+    0%{transform:rotateY(0deg) scale(1) translateY(200px);}
+    10%{transform:rotateY(0deg) scale(0.8) translateY(180px);}
+    20%{transform:rotateY(0deg) scale(0.6) translateY(160px);}
+    30%{transform:rotateY(0deg) scale(0.4) translateY(140px);}
+    40%{transform:rotateY(0deg) scale(0.2) translateY(120px);}
+    50%{transform:rotateY(180deg) scale(0.1) translateY(100px);}
+    60%{transform:rotateY(180deg) scale(0.2) translateY(120px);}
+    70%{transform:rotateY(180deg) scale(0.4) translateY(140px);}
+    80%{transform:rotateY(180deg) scale(0.6) translateY(160px);}
+    90%{transform:rotateY(180deg) scale(0.8) translateY(180px);}
+    100%{transform:rotateY(0deg) scale(1) translateY(200px);}
+}
+
+
+/*上螺旋桨动画*/
+@keyframes animationTop{
+    from,to{}
+    16%{transform:rotateY(60deg);}
+    33%{transform:rotateY(120deg);}
+    50%{transform:rotateY(180deg);}
+    66%{transform:rotateY(240deg);}
+    83%{transform:rotateY(300deg);}
+    100%{transform:rotateY(360deg);}
+}
+@-webkit-keyframes animationTop{
+    from,to{}
+    16%{transform:rotateY(60deg);}
+    33%{transform:rotateY(120deg);}
+    50%{transform:rotateY(180deg);}
+    66%{transform:rotateY(240deg);}
+    83%{transform:rotateY(300deg);}
+    100%{transform:rotateY(360deg);}
+}
+@-o-keyframes animationTop{
+    from,to{}
+    16%{transform:rotateY(60deg);}
+    33%{transform:rotateY(120deg);}
+    50%{transform:rotateY(180deg);}
+    66%{transform:rotateY(240deg);}
+    83%{transform:rotateY(300deg);}
+    100%{transform:rotateY(360deg);}
+}
+@-moz-keyframes animationTop{
+    from,to{}
+    16%{transform:rotateY(60deg);}
+    33%{transform:rotateY(120deg);}
+    50%{transform:rotateY(180deg);}
+    66%{transform:rotateY(240deg);}
+    83%{transform:rotateY(300deg);}
+    100%{transform:rotateY(360deg);}
+}
+/*尾部螺旋桨动画*/
+@keyframes animationBack{
+    from,to{}
+    16%{transform:rotateZ(60deg);}
+    33%{transform:rotateZ(120deg);}
+    50%{transform:rotateZ(180deg);}
+    66%{transform:rotateZ(240deg);}
+    83%{transform:rotateZ(300deg);}
+    100%{transform:rotateZ(360deg);}
+}
+@-webkit-keyframes animationBack{
+    from,to{}
+    16%{transform:rotateZ(60deg);}
+    33%{transform:rotateZ(120deg);}
+    50%{transform:rotateZ(180deg);}
+    66%{transform:rotateZ(240deg);}
+    83%{transform:rotateZ(300deg);}
+    100%{transform:rotateZ(360deg);}
+}
+@-moz-keyframes animationBack{
+    from,to{}
+    16%{transform:rotateZ(60deg);}
+    33%{transform:rotateZ(120deg);}
+    50%{transform:rotateZ(180deg);}
+    66%{transform:rotateZ(240deg);}
+    83%{transform:rotateZ(300deg);}
+    100%{transform:rotateZ(360deg);}
+}
+@-o-keyframes animationBack{
+    from,to{}
+    16%{transform:rotateZ(60deg);}
+    33%{transform:rotateZ(120deg);}
+    50%{transform:rotateZ(180deg);}
+    66%{transform:rotateZ(240deg);}
+    83%{transform:rotateZ(300deg);}
+    100%{transform:rotateZ(360deg);}
+}

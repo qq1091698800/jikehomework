@@ -1,0 +1,109 @@
+﻿h1{text-align:center;white-space:nowrap;}
+.wrapper{
+    width:160px;
+    height:160px;
+    margin:80px auto;
+}
+#box{
+    -moz-transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    /*观察距离
+    -moz-perspective:190px;
+    -webkit-perspective:190px;
+        */
+    /*观察角度
+    -moz-perspective-origin:-50px -50px;
+    -webkit-perspective-origin:-50px -50px;
+        */
+    /*动画设置*/
+    -moz-animation-name:animation;
+    -webkit-animation-name:animation;
+    -moz-animation-timing-function:ease-in-out;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-duration:3s;
+    -webkit-animation-duration:3s;
+    /*设置旋转基本点*/
+    -moz-transform-origin:80px 80px 0;
+    -webkit-transform-origin:80px 80px 0;
+}
+
+/*设置每个面*/
+#box > div{
+    position:absolute;
+    border:solid 3px #000;
+    font-size:100px;
+    height:160px;
+    width:160px;
+    line-height:160px;
+    text-align:center;
+}
+
+/*每个面上的小方块*/
+#box > div > div{
+    width:52px;
+    height:52px;
+    float:left;
+}
+/*小方块border设置*/
+#box > div > div:nth-child(1),#box > div > div:nth-child(2),#box > div > div:nth-child(4),#box > div > div:nth-child(5){
+    border-right:2px solid #000;
+    border-bottom:2px solid #000;
+}
+#box > div > div:nth-child(3),#box > div > div:nth-child(6){
+    border-bottom:2px solid #000;
+}
+#box > div > div:nth-child(7),#box > div > div:nth-child(8){
+    border-right:2px solid #000;
+}
+
+/*6个面3d设置*/
+.box1{
+    background:#054494;
+    -moz-transform:translateZ(80px);
+    -webkit-transform:translateZ(80px);
+}
+.box2{
+    background:#ea810e;
+    -moz-transform:rotateX(-90deg) translateZ(80px);
+    -webkit-transform:rotateX(-90deg) translateZ(80px);
+}
+.box3{
+    background:#c50513;
+    -moz-transform:rotateX(90deg) translateZ(80px);
+    -webkit-transform:rotateX(90deg) translateZ(80px);
+}
+.box4{
+    background:#05943f;
+    -moz-transform:translateZ(-80px);
+    -webkit-transform:translateZ(-80px);
+}
+.box5{
+    background:#ebeb05;
+    -moz-transform:rotateY(-90deg) translateZ(80px) rotateZ(-90deg);
+    -webkit-transform:rotateY(-90deg) translateZ(80px) rotateZ(-90deg);
+}
+.box6{
+    background:#ebebeb;
+    -moz-transform:rotateY(90deg) translateZ(80px);
+    -webkit-transform:rotateY(90deg) translateZ(80px);
+}
+
+/*定义旋转动画*/
+@-moz-keyframes animation{
+    from,to{}
+    16%{-moz-transform:rotateY(-90deg);}
+    33%{-moz-transform:rotateY(-90deg) rotateZ(135deg);}
+    50%{-moz-transform:rotateY(225deg) rotateZ(135deg);}
+    66%{-moz-transform:rotateY(135deg) rotateZ(135deg);}
+    83%{-moz-transform:rotateX(135deg) rotateZ(135deg);}
+}
+@-webkit-keyframes animation{
+    from,to{}
+    16%{-webkit-transform:rotateY(-90deg);}
+    33%{-webkit-transform:rotateY(-90deg) rotateZ(135deg);}
+    50%{-webkit-transform:rotateY(225deg) rotateZ(135deg);}
+    66%{-webkit-transform:rotateY(135deg) rotateZ(135deg);}
+    83%{-webkit-transform:rotateX(135deg) rotateZ(135deg);}
+}
