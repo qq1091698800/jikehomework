@@ -1,0 +1,59 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aliceblue;
+    font-size:20px;
+    text-align:center;
+}
+h2{
+    margin-top:10px;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+}
+/*旧版弹性盒子容器，默认横向排列*/
+.box{
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    width:100%;
+    height:200px;
+    margin-bottom:10px;
+}
+.item1{
+    background-color:orange;
+}
+.item2{
+    background-color:aquamarine;
+}
+.item3{
+    background-color:#e3ff7f;
+}
+
+
+/*旧版弹性盒子显示比例*/
+.box1 .item1{
+    -webkit-box-flex:1;
+}
+.box1 .item2{
+    -webkit-box-flex:2;
+}
+.box1 .item3{
+    -webkit-box-flex:1;
+}
+
+/*旧版弹性盒子排列方向*/
+.box2{
+     -webkit-box-orient:vertical;
+}
+.box2 .item1{
+   -webkit-box-flex:1;
+}
+.box2 .item2{
+    -webkit-box-flex:2;
+}
+.box2 .item3{
+    -webkit-box-flex:1;
+}
+

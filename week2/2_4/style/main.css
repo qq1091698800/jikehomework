@@ -1,0 +1,55 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aliceblue;
+    width:100%;
+    overflow:hidden;
+}
+h1{
+    text-align:center;
+}
+/*垂直居中，水平居中*/
+#wrapper {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130px;
+    height: 300px;
+    margin-left:-65px;
+    margin-top:-150px;
+}
+
+/*盒子阴影*/
+.box{
+    box-shadow: 5px 5px 8px 0px #909090;
+}
+/*中间鞋子*/
+.shoe {
+    text-align:center;
+    line-height:100px;
+    width:100px;
+    height:100px;
+    background: orange;
+}
+/*正常盒子*/
+.box1{
+    margin-bottom:20px;
+    padding:10px;
+    width:100px;
+    height:100px;
+    background:aqua;
+    border:5px solid red;
+}
+/*怪异盒子*/
+.box2{
+    box-sizing:border-box;
+    margin-top:20px;
+    padding:10px;
+    width:130px;
+    height:130px;
+    background:aqua;
+    border:5px solid red;
+}

@@ -1,0 +1,33 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aliceblue;
+    width:100%;
+    overflow:hidden;
+    font-size:14px;
+    line-height:25px;
+}
+h1{
+    text-align:center;
+}
+/*多列布局*/
+.col{
+    margin-top:10px;
+    width:100%;
+    -webkit-column-count:3;
+    -webkit-column-rule-style:dotted;
+    -webkit-column-rule-width:2px;
+    -webkit-column-width:150px;
+    -moz-column-count:3;
+    -moz-column-rule-style:dotted;
+    -moz-column-rule-width:2px;
+    -moz-column-width:150px;
+}
+.col img {
+    float: left;
+    border: none;
+    margin: 10px;
+    width:150px;
+}

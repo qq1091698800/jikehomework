@@ -1,0 +1,92 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #0d7792;
+    font-size:12px;
+}
+.header{
+    padding:20px;
+    position:relative;
+}
+.header .nav{
+    position:absolute;
+    right:50px;
+    bottom:20px;
+}
+.header .nav a{
+    color:#ff0099;
+    text-decoration:none;
+}
+.header img{
+    width:180px;
+}
+/*链接默认蓝色*/
+a.return{
+    color:#00f;
+}
+a.return:hover{
+    color:#f00;
+}
+/*输入项描述*/
+span.tip{
+    color:blue;
+}
+/*重点提示项*/
+em{
+    font-style:normal;
+    color:red;
+    width:100%;
+}
+/*水平居中，宽度固定*/
+#wrapper {
+    background: #fff;
+    margin:20px auto;
+    width:800px;
+    padding-bottom:10px;
+    border-radius:10px;
+}
+/*固定表格宽度*/
+#tbinfo{
+    width:750px;
+    margin:0 auto;
+    background-color:#cccccc;
+    line-height:25px;
+    border-spacing:1px;
+}
+/*表头*/
+#tbinfo caption{
+    font-size:20px;
+    line-height:50px;
+    font-weight:bold;
+}
+/*表格描述*/
+#tbinfo th{
+    font-weight:normal;
+    background-color:#fff;
+    line-height:20px;
+}
+#tbinfo td{
+    background-color:#fff;
+    padding:3px;
+}
+/*项目名称，居右侧，优先级较低*/
+#tbinfo>tbody>tr>td:first-child{
+    text-align:right;
+    white-space:nowrap;
+}
+#tbinfo>tbody>tr>td.item{
+    font-weight:bold;
+    padding-left:15px;
+    background:#eeeeee;
+    color:#003399;
+    text-align:left;
+}
+#tbinfo table{
+    width:100%;
+}
+.subform p{
+    text-align:center;
+    line-height:50px;
+}

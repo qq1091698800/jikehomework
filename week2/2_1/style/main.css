@@ -1,0 +1,42 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    width:100%;
+    overflow:hidden;
+}
+
+#wrapper {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+}
+/*实现水平居中、垂直居中*/
+.itembox {
+    width: 306px;
+    height: 306px;
+    position: relative;
+    left: -50%;
+    top: -50%;
+}
+/*方块*/
+#wrapper .item {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin:1px;
+    background: #eeeeee url(../images/Toy_Boy_Panda.png) center center no-repeat;
+    box-shadow: 3px 3px 5px 0px #dddddd;
+}
+/*第一个方块、最后一个方块的处理*/
+#wrapper .item:first-child,#wrapper .item:last-child {
+    float:none;
+    margin:1px auto;
+    clear:both;
+}
