@@ -1,0 +1,379 @@
+﻿/*中间主要内容部分*/
+.main-wrapper{
+    width:1000px;
+    margin:20px auto;
+}
+.main{
+    width: 776px;
+    float:right;
+}
+/*课程过滤项*/
+.classFilter{    
+    width:776px;
+    height:38px;
+    line-height:38px;
+    margin-bottom:15px;
+    background:#fff;
+    z-index:998;
+}
+.classFilter .selClass{
+    float:left;
+}
+.classFilter .selClass h3{
+    float: left;
+    padding: 0 21px;
+    border-right: 1px solid #f5f5f5;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default;
+}
+.classFilter .selClass dl{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    overflow:visible;
+    white-space: nowrap;
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+}
+/*子菜单显示*/
+.classFilter .selClass dl:hover{
+    border:1px solid #e4e4e4;
+    border-width: 0 1px 1px;
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+    box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+}
+.classFilter .selClass dl dt {
+    padding: 0 25px 0 18px;
+    position:relative;
+    height: auto;
+    overflow: visible;
+}
+/*子菜单下拉三角符号*/
+.classFilter .selClass dl dt i{
+    display:block;
+    visibility:visible;
+    position:absolute;
+    right:6px;
+    top:12px;
+    height:10px;
+    width:10px;
+    overflow:visible;
+    border-top:1px solid gray;
+    border-left:1px solid gray;
+    transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+}
+
+.classFilter .selClass dl:hover dd a{
+    display:block;
+}
+.classFilter .selClass dl:hover dt i{
+    visibility:hidden;
+}
+.classFilter .selClass dl dd{
+    background:#fff;
+    position:absolute;
+    z-index:999;
+}
+.classFilter .selClass dl dd a{
+    display:none;
+    padding:0 25px 0 18px;
+    height:36px;
+    line-height:36px;
+    z-index: 12;
+}
+/*右侧切换显示形式 按钮*/
+.classFilter .viewClass {
+    float:right;
+    height:38px;
+    width:72px;
+}
+.classFilter .viewClass li{
+    float:left;
+}
+.classFilter .viewClass li a{
+    display:block;
+    width:32px;
+    height:38px;
+    float:left;
+    border:1px solid #f5f5f5;
+}
+.classFilter .viewClass li:first-child a{
+    border-right:0;
+}
+.classFilter .viewClass li a.block-icon{
+    background:url('../images/icon-block.png') 5px 8px no-repeat;
+    background-size:20px 20px;
+}
+.classFilter .viewClass li a.list-icon{
+    background:url('../images/icon-list.png') 5px 8px no-repeat;
+    background-size:20px 20px;
+}
+
+/*分页样式*/
+ul.pages{
+    display: block;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 10px 45px;
+    padding: 0;
+}
+
+ul.pages li{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    margin-left: 3px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    color: gray;
+    border: 1px solid #e4e4e4;
+}
+/*鼠标落在分页符上，优先级低于li.pgEmpty，正好实现了*/
+ul.pages li:hover{
+    border:1px solid #35B558;
+    color:#35B558;
+}
+ul.pages li.pgNext{
+    width: 50px;
+}
+ul.pages li.pgEmpty{
+    border: 1px solid #f0f0f0;
+    color: #d9d6c3;
+    width: 50px;
+    cursor: default;
+}
+ul.pages li.pgCurrent{
+    background: #35b558;
+    color: #fff;
+    border: 1px solid #35B558;
+}
+ul.pages li.thpoint{
+    border: 0;
+    cursor: auto;
+    color: #000;
+    background: none!important;
+    margin-top: 3px;
+}
+ul.pages li.pagetotal{
+    width: 70px;
+}
+ul.pages li.pagenow{
+        width: 100px;
+}
+ul.pages li.go{
+    width: 32px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 6px;
+}
+/*页码输入框*/
+ul.pages li input{
+    width: 35px!important;
+    height: 22px!important;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    color: #666;
+    line-height: 22px;
+    margin: 0 10px;
+    vertical-align: middle;
+    text-align:center;
+}
+
+
+/*课程列表，块状显示样式*/
+ul.classLst{
+    margin-top:15px;
+    width:776px;
+}
+ul.classLst li{
+    width:250px;
+    height: 225px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    float:left;
+}
+/*最后一列右边距去掉*/
+ul.classLst li:nth-child(3n){
+    margin-right:0;
+}
+ul.classLst .imgbox{
+    width: 100%;
+    height: 135px;
+    position: relative;
+}
+ul.classLst .imgbox img{
+    width: 100%;
+    height: 135px;
+}
+/*图片播放阴影，鼠标移到时显示*/
+ul .imgbox .shade{
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity:0;
+}
+/*图片播放按钮，鼠标移到时显示*/
+ul .imgbox .shade .play{
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(../images/player.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px;
+}
+/*课程文字信息*/
+ul.classLst .infobox{
+    padding: 10px;
+    position: relative;
+    z-index: 200;
+    height: 88px;
+    overflow: hidden;
+    background: #fff;
+}
+/*课程标题*/
+ul.classLst .infobox h2 {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden;
+}
+ul.classLst .infobox h2 a{
+    color:#333;
+}
+/*课程简介，鼠标移动时显示*/
+ul.classLst .infobox p{
+    display: none;
+    height: 0;
+    opacity: 0;
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+/*课程介绍下面的图标*/
+ul.classLst .infobox .icons{
+    font-size: 12px;
+    color: gray;
+    position: relative;
+}
+ul .infobox .icons div{
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+    width: 115px;
+    height:26px;
+    line-height:26px;
+}
+
+ul .infobox .icons div.times{
+    padding-left:25px;
+    background:url('../images/clok.png') 0 5px no-repeat;
+    background-size:18px 18px;
+}
+ul .infobox .icons div.level{
+    padding-left:25px;
+    background:url('../images/three-ji.png') 0 3px no-repeat;
+    background-size:20px 20px;
+    display:none;
+}
+ul .infobox .icons div.learn-count{
+    text-align:right;
+}
+
+/*鼠标移动时的样式*/
+ul.classLst li:hover .infobox p {
+    display: block;
+    height: 52px;
+    opacity: 1;
+}
+ul.classLst li:hover .infobox{
+    height: 175px;
+}
+ul.classLst li:hover .infobox .icons div.level {
+    display:block;
+}
+
+/*课程列表时的显示样式*/
+ul.classLst2{
+    margin-top:15px;
+    width:776px;
+}
+ul.classLst2 li{
+    height: 100px;
+    padding: 0;
+    background-color: #fff;
+    margin-top: 13px;
+    width:776px;
+    float:left;
+}
+ul.classLst2 .imgbox{
+    width: 185px;
+    height: 100px;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+ul.classLst2 .imgbox img{
+    width: 185px;
+    height: 100px;
+}    
+ul.classLst2 .infobox {
+    position: relative;
+    height: 88px;
+    width: 566px;
+    float: left;
+}
+ul.classLst2 .infobox h2{
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}    
+ul.classLst2 .infobox p{
+    color: gray;
+    font-size: 12px;
+    opacity: 1!important;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    height:36px;
+}
+ul.classLst2 .infobox .icons{
+    font-size: 12px;
+    color: gray;
+    position: relative;
+    width:566px;
+    height:26px;
+}
+ul.classLst2 .infobox .icons div{
+    float:left;
+}
+ul.classLst2 .infobox .icons div.level{
+    display:block;
+}
+ul.classLst2 .infobox .icons div.learn-count{
+    float:right;
+}

@@ -1,0 +1,70 @@
+﻿/*常用设置*/
+div,ul,li,body,html{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style:none;
+}
+.b{
+    font-weight:bold;
+}
+.clearfx{
+    clear:both;
+}
+
+.hotitem,.hotitem:before,.hotitem:after{
+    color:#fb4343;
+}
+body,input{
+    font-family:微软雅黑
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+.center{
+    text-align:center;
+}
+i,em{
+    font-style:normal;
+}
+h2{
+    font-size:16px;
+    line-height:30px;
+}
+h3{
+    font-size:16px;
+    line-height:30px;
+    margin:5px 0;
+    padding:0;
+}
+
+
+/*适配手机屏幕，宽度600及以下*/
+@media screen and (max-width:600px){
+    .wrapper{display:none;}
+    html,body{width:100%;}
+    html{
+        font-size:62.5%;
+    }
+    body{
+        font-size:1em;
+        background:#eeeff0;
+    }
+    li,div{
+        box-sizing:border-box;
+        background:transparent;
+    }
+}
+
+/*适配大屏幕，宽度600以上*/
+@media screen and (min-width:600px){
+    .wrapper-phone{display:none;}
+    html,body,.wrapper{
+        min-height:600px;
+        min-width:660px;
+        position:relative;
+        height:100%;
+    }
+}

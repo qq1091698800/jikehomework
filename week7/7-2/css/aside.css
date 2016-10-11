@@ -1,0 +1,131 @@
+﻿/*页面左侧菜单*/
+.aside{
+    width: 210px;
+    background:#fff;
+    float:left;
+}
+.aside .menuClassList{
+    border:1px solid #35b558;
+    position:relative;
+}
+/*菜单头*/
+.aside .menuClassList li h2{
+    line-height: 36px;
+    color: #35b558;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left:32px;
+    background:url(../images/icon-0.png) 5px 5px no-repeat;
+    background-size:20px 20px;
+}
+/*菜单通用设置*/
+.aside li{
+    width:208px;
+    height:36px;
+    border-bottom:1px solid #ddd;
+}
+.aside li a{
+    display:block;
+    padding-left:32px;
+    width:210px;
+    height:36px;
+    line-height:36px;
+}
+
+/*底部4个菜单*/
+.aside .typeLst a{
+    font-size:13px;
+    position:relative;
+    font-weight:bold;
+}
+.aside .typeLst a:hover{
+    background:#ddd;
+}
+.aside .typeLst a:hover span{
+    display:block;
+}
+.aside .typeLst a i{
+    position:absolute;
+    width:20px;
+    height:20px;
+    top:5px;
+    left:5px;
+}
+.aside .typeLst a  span{
+    display:none;
+    font-weight:normal;
+    font-size:8px;
+    float:right;
+    padding-right:10px;
+    color:#666;
+}
+/*底部菜单图标*/
+.aside .typeLst a .icon-1{background:url(../images/icon-1.png) 0px 0px no-repeat;background-size:20px 20px;}
+.aside .typeLst a .icon-2{background:url(../images/icon-2.png) 0px 0px no-repeat;background-size:20px 20px;}
+.aside .typeLst a .icon-3{background:url(../images/icon-3.png) 0px 0px no-repeat;background-size:20px 20px;}
+.aside .typeLst a .icon-4{background:url(../images/icon-4.png) 0px 0px no-repeat;background-size:20px 20px;}
+
+/*上部带子菜单*/
+.aside .menuClassList li:hover > a{
+    color: #35b558;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow:1px 2px 4px rgba(0,0,0,.1);
+    -moz-box-shadow:1px 2px 4px rgba(0,0,0,.1);
+    -webkit-box-shadow:1px 2px 4px rgba(0,0,0,.1);
+}
+/*鼠标滑入子菜单效果*/
+.aside .menuClassList li > div a{
+    display:inline;
+    padding:0 10px 0 10px;
+}
+.aside .menuClassList li:hover div {
+    display:block;
+}
+/*子菜单*/
+.aside .menuClassList li div{
+    display:none;
+    width:400px;
+    min-height:398px;
+    padding:15px;
+    position:absolute;
+    left:208px;
+    top:0;
+    z-index:999;
+    background:#fff;
+    box-shadow:1px 2px 4px rgba(0,0,0,.1);
+    -webkit-box-shadow:1px 2px 4px rgba(0,0,0,.1);
+}
+.aside .menuClassList li > div dl{
+    margin-bottom:10px;
+    overflow:hidden;
+}
+/*子菜单分类标题*/
+.aside .menuClassList li > div dl dt{
+    display:block;
+    border-bottom:1px solid #eee;
+    clear:both;
+}
+.aside .menuClassList li > div dl dt a{
+    font-size:13px;
+}
+/*子菜单子项*/
+.aside .menuClassList li > div dl dd{
+    text-align:left;
+    margin-left:-18px;
+    width:400px;
+    overflow:hidden;
+    padding:0 15px;
+}
+.aside .menuClassList li > div dl dd a{
+    border-left:1px solid #e0e0e0;
+    margin:10px 0;
+    white-space:nowrap;
+    display:inline-block;
+    float:left;
+    height:25px;
+    line-height:25px;
+    padding:0px 10px;
+    margin:3px 0;
+    width:auto;
+}

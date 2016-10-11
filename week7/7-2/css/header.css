@@ -1,0 +1,422 @@
+﻿/*页面顶部*/
+.header{
+background:#fff;
+border-bottom: 1px solid #ececec;
+z-index:1000;
+}
+
+.header > div{
+    height:60px;
+    line-height:60px;
+    position:relative;
+    width:1000px;
+    margin:0px auto;
+    clear:both;
+}
+
+/*logo*/
+.header .logo{
+    display:inline-block;
+    float:left;
+    margin-right: 60px;
+    height: 60px;
+    padding-top:10px;
+}
+.header .logo img{
+    height:40px;
+}
+
+/*导航菜单*/
+.header nav{
+    display:inline-block;
+}
+
+.header li{
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+    height: 60px;
+    float: left;
+}
+/*菜单箭头*/
+.arrow-icon{
+    display:inline-block;
+    width:8px;
+    height:8px;
+    border-top:1px solid #c1c1c1;
+    border-left:1px solid #c1c1c1;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    transform:rotate(225deg);
+    -webkit-transform:rotate(225deg);
+    -moz-transform:rotate(225deg);
+    -ms-transform:rotate(225deg);
+    transform-origin: 4px 4px;
+}
+/*下拉菜单箭头动画*/
+.header li:hover .arrow-icon {
+    border-top: 1px solid #35b558;
+	border-left: 1px solid #35b558;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+    margin-bottom:-2px;
+    animation: arr_rotate 0.5s ease normal;
+	-moz-animation: arr_rotate 0.5s ease normal;
+	-webkit-animation: arr_rotate 0.5s ease normal;
+}
+@keyframes arr_rotate {
+	0% {
+		margin-bottom: 2px;
+		transform: rotate(225deg);
+		-webkit-transform: rotate(225deg);
+		-moz-transform: rotate(225deg);
+		-ms-transform: rotate(225deg);
+	}
+	10% {
+		margin-bottom: -2px;
+	}
+	100% {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+	}
+}
+
+.header nav a:hover {
+	color: #35b558;
+}
+.header nav li:hover {
+	color: #35b558;
+	cursor: pointer;
+}
+/*菜单渐变显示动画*/
+.header li:hover .submenu{
+    display: block;
+	opacity: 1;
+	animation: menuon 0.8s ease normal;
+	-moz-animation: menuon 0.8s ease normal;
+	-webkit-animation: menuon 0.8s ease normal;
+}
+
+@keyframes menuon {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*顶部子菜单*/
+.header li .submenu{
+    display: none;
+	position: absolute;
+	z-index: 100;
+	top: 60px;
+	left: 0;
+	background: #fff;
+	font-size: 12px;
+	color: #666;
+	width: 280px;
+}
+.header li .submenu h3 {
+	margin: 10px 0;
+	background: #fafafa;
+	height: 28px;
+	line-height: 28px;
+    padding:0 10px;
+}
+.header li .submenu a {
+	display: block;
+    color:#666;
+	line-height: 30px;
+    padding:0 10px;
+}
+.header li .vip-lesson a {
+	color:#666;
+    line-height:40px;
+}
+.header li .submenu a:hover{
+	color:#35b558;
+}
+.header li .vip-lesson span {
+    display:inline-block;
+    float:right;
+	color:#666;
+    line-height:40px;
+}
+.header li .submenu i{
+    width:14px;
+    height:14px;
+    display:inline-block;
+    margin-right:10px;
+}
+
+/*菜单上小图标*/
+.submenu i.web-icon {
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: -15px -27px;
+}
+.submenu i.python-icon {
+    background: url("../images/allicon3.png") 0 0 no-repeat;
+    background-size: 16px 148px;
+    background-position: -2px -2px;
+}
+.submenu i.go-icon {
+    background: url("../images/allicon3.png") 0 0 no-repeat;
+    background-size: 16px 148px;
+    background-position: -2px -38px;
+}
+.submenu i.ios-icon {
+    background: url("../images/allicon3.png") 0 0 no-repeat;
+    background-size: 16px 148px;
+    background-position: -2px -82px;
+}
+.submenu i.kck-icon{
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: 0 -13px;
+}
+.submenu i.zyljt-icon{
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: -45px 0;
+}
+.submenu i.zstxt-icon{
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: -30px -13px;
+}
+.submenu i.xlkc-icon{
+    background: url("../images/xlkc2.png") 0 0 no-repeat;
+	background-position: 0 0;
+	background-size: 12px 12px;
+}
+.submenu i.kcbq-icon{
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: -15px -13px;
+}
+.submenu i.vip-icon{
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: -16px 0;
+}
+
+.submenu i.jswd-icon{
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: 0 -27px;
+}
+.submenu i.wiki-icon{
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: -29px -27px;
+}
+.submenu i.sq-icon{
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: 0 2px;
+}
+.submenu i.zygx-icon{
+    background: url("../images/allicon.png") 0 0 no-repeat;
+    background-size:64px 64px;
+    background-position: -30px 0;
+}
+
+
+/*搜索 + 二维码框*/
+.tool-box{
+    float: right;
+    width: 200px;
+    height: 60px;
+}
+.tool-box span{
+    margin-right:20px;
+}
+/*搜索框*/
+.tool-box .search-icon{
+    background: url("../images/search-icon.png") 0 0 no-repeat;
+	background-size: 17px 17px;
+	background-position: 0, 0;
+	height: 17px;
+	width: 17px;
+	display: inline-block;
+    cursor:pointer;
+}
+.tool-box .search-icon:hover{
+    background: url("../images/search-icon2.png");
+	background-size: 17px 17px;
+}
+/*二维码按钮*/
+.tool-box .app-icon{
+    background: url("../images/app-icon.png") 0 0 no-repeat;
+	background-size: 17px 17px;
+	background-position: 0, 0;
+	height: 17px;
+	width: 17px;
+	display: inline-block;
+    cursor:pointer;
+    position:relative;
+}
+.tool-box .app-icon:hover {
+    background: url("../images/app-icon2.png") 0 0 no-repeat;
+	background-size: 17px 17px;
+}
+
+.tool-box .app-icon:hover .submenu{
+    display:block;
+}
+
+/*显示下拉二维码*/
+.tool-box .app-icon .submenu .top-icon{
+    transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: 30px;
+	width: 15px;
+	height: 15px;
+	border-top: 1px solid #ececec;
+	border-left: 1px solid #ececec;
+	display: inline-block;
+	background: #fff;
+}
+.tool-box .app-icon .submenu{
+    display:none;
+    position:absolute;
+    z-index:1000;
+    top:42px;
+    left:-30px;
+}
+
+.tool-box .app-icon .submenu img{
+    width:120px;
+}
+
+/*搜索框弹出动画*/
+.scale{
+    transform-origin: right center;
+    -webkit-transform-origin: right center;
+    -moz-transform-origin: right center;
+    
+    display: block!important;
+    transform: scale(1, 1) !important;
+    opacity: 1!important;
+
+    animation: scalerun 0.8s ease normal;
+    -moz-animation: scalerun 2s line normal;
+    -webkit-animation: scalerun 0.8s ease normal;
+}
+@keyframes scalerun {
+    0% {
+	    opacity: 0;
+	    transform: scale(0.1, 1);
+    }
+    100% {
+	    opacity: 1;
+	    transform: scale(1, 1);
+    }
+}
+@-moz-keyframes scalerun
+{
+	0% {
+		opacity: 0;
+		transform: scale(0.1, 1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+@-webkit-keyframes scalerun
+{
+	0% {
+		opacity: 0;
+		transform: scale(0.1, 1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+@-o-keyframes scalerun
+{
+	0% {
+		opacity: 0;
+		transform: scale(0.1, 1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+/*搜索框*/
+.header .searchbox{
+    display: none;
+    transform: scale(0.1, 1);
+    -moz-transform: scale(0.1, 1);
+    opacity: 0;
+    height: 59px;
+    line-height: 59px;
+    width: 850px;
+    background: #fff;
+    position: absolute;
+    z-index: 11000;
+    top: 0;
+    right: 0;
+}
+/*关闭搜索框*/
+.header .searchbox .close-icon{
+    width: 15px;
+    height: 15px;
+    margin-top: 22px;
+    cursor: pointer;
+    background: url(../images/close3.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1200;
+}
+/*搜索框左侧图标*/
+.header .search-icon{
+    background: url("../images/search-icon.png") 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+}
+/*搜索输入框*/
+.header .searchbox input{
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 10px;
+    outline:none;
+}
+.header .searchbox .tagbox{
+    width: 300px;
+    text-align: right;
+    display: inline;
+    margin-right: 50px;
+    float: right;
+}
+.header .searchbox .tagbox a{
+    font-size: 12px;
+    color: #808080;
+    background: #f5f5f5;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
