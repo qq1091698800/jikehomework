@@ -1,0 +1,80 @@
+﻿div, ul, li, body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background:url(../images/bg.jpg);
+    background-size:cover;
+    overflow:hidden;
+    min-width:500px;
+    min-height:500px;
+    color:#000;
+    font-family:微软雅黑;
+}
+/*水平垂直居中*/
+.wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:500px;
+    height:400px;
+}
+.main-box{
+    position:relative;
+    top:-50%;
+    left:-50%;
+    width:485px;
+    height:385px;
+    padding:15px 0 0 15px;
+    border-radius:15px;
+    background:#f0f8ff;
+}
+
+.main-box div{
+    float:left;
+    margin:0 10px 10px 0;
+}
+
+/*输出窗口*/
+.box-result{
+    width:430px;
+    height:78px;
+    border-radius:5px;
+    background:#fcfdea;
+    border:1px solid #6d6b67;
+    line-height:78px;
+    padding:0 20px;
+    text-align:right;
+    font-size:35px;
+}
+
+/*按钮样式*/
+.btn{
+    background:#e1e1e1;
+    border:1px solid #898a8c;
+    border-radius:8px;
+    float:left;
+    width:83px;
+    height:45px;
+    cursor:pointer;
+    text-align:center;
+    font-size:20px;
+    line-height:45px;
+}
+.btnbig{
+    width:176px;
+}
+
+.btng1{
+    background:#d77740;
+    color:#fff;
+}
+.btng2{
+    background:#353535;
+    color:#fff;
+}
+.btng3{
+    background:#868e94;
+    font-weight:800;
+}
