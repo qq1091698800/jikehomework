@@ -1,0 +1,10 @@
+数据库sql脚本：/news_db.sql
+
+后台：/Admin
+连接mysql的配置在文件 /Admin/db.php前4行
+首页访问地址：/Admin/index.php，未登录会跳到login.php，密码：admin / 123456
+可以对新闻添加/更新/删除、图片上传/更改
+
+前端h5页面：/H5News
+配置后台请求api地址前缀：/H5News/js/app.js第一行
+首页访问地址：/H5News/index.html
