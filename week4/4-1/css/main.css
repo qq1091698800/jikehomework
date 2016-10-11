@@ -1,0 +1,624 @@
+﻿/*页面主体部分*/
+/*section 通用设置*/
+section{
+    box-sizing:border-box;
+	width:1000px;
+	margin:0 auto;
+	position:relative
+}
+section ul .h2Container {
+	padding-top:10px;
+	width:230px;
+	height:330px;
+	background:#fff;
+    text-align:left;
+}
+section ul{
+    height:100%;
+	width:100%
+}
+section ul>li {
+	float:left;
+	margin-right:14px;
+	background:#fff
+}
+section ul>li img {
+	width:100%;
+	height:100%
+}
+section ul>li a {
+	display:block;
+	height:100%
+}
+section .h2Container h2{
+    font-size: 19px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    border-left: 2px solid #2d85ca;
+    font-weight:400;
+}
+section .h2Container .h2text{
+    font-size: 14px;
+    color: #333;
+    padding-left: 17px;
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+section .h2Container>span{
+    margin-left: 17px;
+    margin-bottom: 5px;
+    display: block;
+    width: 62px;
+    height: 18px;
+    font-size: 12px;
+    border: 1px solid #eee;
+    line-height: 16px;
+    border-radius: 2px;
+    color: gray;
+    vertical-align: middle;
+    overflow: hidden;
+}
+section .h2Container>span:before{
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: #2d85ca url(../images/h2icon.png) no-repeat center / 15px 14px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    margin-right: 4px;
+}
+section .h2Container .h2img{
+    text-align: center;
+    height: 155px;
+}
+section .h2Container .h2img img{
+    margin-top: 38px;
+    width: 120px;
+    height: 88px;
+}
+section .h2Container>p{
+    font-size: 12px;
+    color: #666;
+    line-height: 22px;
+    padding-left: 17px;
+}
+/*main 视频背景+banner*/
+#main .jkBanner{
+    box-sizing:border-box;
+    width:100%;
+	height:525px;
+	position:relative;
+	text-align:center;
+	min-width:1000px;
+	background:url(../images/sp.jpg) no-repeat center;
+}
+#main .jkBanner .videoWrapper{
+    display:inline-block;
+	width:100%;
+	height:525px;
+	overflow:hidden;
+	position:relative
+}
+/*视频居中*/
+#main .jkBanner .jkvideo{
+    position:relative;
+    left:50%;
+    margin-left:-918px;
+    width:1836px;
+    height:525px;
+}
+#main .jkBanner .bannerInfo{
+    position:absolute;
+    left:0;
+    top:0;
+    text-align:center;
+    z-index:9;
+    color:#fff;
+    width:100%;
+}
+#main .jkBanner .bannerInfo h1{
+    height:100px;
+    line-height:100px;
+    font-weight:500;
+    font-size:35px;
+}
+#main .jkBanner .bannerInfo p{
+    font-size:14px;
+    line-height:25px;
+}
+#main .jkBanner .bannerInfo >span{
+    line-height:30px;
+    display:block;
+    margin-top:50px;
+    font-size:14px;
+}
+#main .jkBanner .bannerDownload{
+    margin-top:50px;
+    height:50px;
+}
+.jkBanner .bannerDownload>a {
+	display:inline-block;
+	height:44px;
+	width:141px
+}
+#main .jkBanner .androidDownload{
+    background:url(../images/anddown.png) no-repeat center / 141px 44px;
+    margin-right:20px;
+}
+#main .jkBanner .androidDownload:hover{
+    background:url(../images/anddownhover.png) no-repeat center / 141px 44px;
+}
+
+#main .jkBanner .iosDownload{
+    background:url(../images/iosdown.png) no-repeat center / 141px 44px;
+}
+#main .jkBanner .iosDownload:hover{
+    background:url(../images/iosdownhover.png) no-repeat center / 141px 44px;
+}
+#main .jkBanner .bannerStatus {
+	margin-top:15px;
+	height:38px
+}
+#main .jkBanner .bannerStatus>a {
+	display:inline-block;
+	width:38px;
+	height:38px
+}
+#main .jkBanner .bannerStatus .haveLogin {
+	display:inline-block;
+	width:120px;
+	height:38px;
+	background:url(../images/haveloginhover.png) no-repeat center / 120px 30px;
+}
+#main .jkBanner .bannerStatus .haveLogin:hover {
+	background:url(../images/havelogin.png) no-repeat center / 120px 30px
+}
+#main .jkBanner .bannerCard {
+	height:240px;
+	width:1000px;
+	margin:30px auto 0;
+}
+#main .jkBanner .bannerCard>div {
+	float:left;
+	width:320px;
+	height:240px;
+	background:#fff;
+	margin-right:20px
+}
+#main .jkBanner .bannerCard>div:last-child {
+	margin-right:0px
+}
+
+#main .jkBanner .bannerCard>div .cardInfo {
+	height:130px;
+	background:#f9f9f9
+}
+#main .jkBanner .bannerCard>div .cardInfo>h3 {
+	font-size:18px;
+	height:50px;
+    line-height:50px;
+    font-weight:normal;
+	color:#333
+}
+#main .jkBanner .bannerCard>div .cardInfo>p {
+	border-top:1px solid #eee;
+	height:80px;
+	padding:10px 15px;
+	text-align:left;
+	font-size:13px;
+	color:#444;
+	line-height:21px;
+	overflow:hidden
+}
+#main .jkBanner .bannerCard>div >div:last-child {
+	padding:17px 10px;
+	height:110px
+}
+#main .jkBanner .bannerCard>div .collegeClass ul {
+	height:100%
+}
+#main .jkBanner .bannerCard>div .collegeClass ul li {
+	float:left;
+	height:100%;
+	width:25%;
+	font-size:12px;
+	color:#666;
+	text-align:center
+}
+#main .jkBanner .bannerCard > div .collegeClass ul li a{
+    display:block;
+    width:100%;
+    height:30px;
+    padding-top:50px;
+}
+#main .jkBanner .bannerCard > div ul li a:hover {
+    color: #35b558;
+}
+#main .jkBanner .bannerCard > div .collegeClass ul li a.webCard{
+    background:url(../images/cardhtml5.jpg) no-repeat center / 26px 35px
+}
+#main .jkBanner .bannerCard > div .collegeClass ul li a.goCard{
+    background:url(../images/cardgo.png) no-repeat center / 25px 35px
+}
+#main .jkBanner .bannerCard > div .collegeClass ul li a.iosCard{
+    background:url(../images/cardios.jpg) no-repeat center / 30px 35px
+}
+#main .jkBanner .bannerCard > div .collegeClass ul li a.pythonCard{
+    background:url(../images/cardpython.png) no-repeat center / 35px 35px
+}
+#main .jkBanner li{
+    margin:0;
+}
+#main .jkBanner .bannerCard>div .libraryClass li {
+	float:left;    
+	height:100%;
+	width:50%;
+	font-size:12px;
+	color:#666;
+	text-align:center
+}
+#main .jkBanner .bannerCard>div .libraryClass a{
+    font-size:14px;
+    display:inline-block;
+    width:100%;
+    padding-top:40px;
+    height:25px;
+}
+#main .jkBanner .bannerCard>div .libraryClass span{
+    display:inline-block;
+    height:25px;
+    line-height:25px;
+}
+#main .jkBanner .bannerCard>div .libraryClass a.videoCard {
+	background:url(../images/cardvideo.jpg) no-repeat top center / 30px 30px;
+}
+#main .jkBanner .bannerCard>div .libraryClass a.videoCard:hover {
+	background:url(../images/cardvideohover.png) no-repeat top center / 30px 30px;
+}
+#main .jkBanner .bannerCard>div .libraryClass a.wikiCard {
+	background:url(../images/cardwiki.jpg) no-repeat top center / 25px 26px;
+}
+#main .jkBanner .bannerCard>div .libraryClass a.wikiCard:hover {
+	background:url(../images/cardwikihover.png) no-repeat top center / 25px 26px;
+}
+#main .jkBanner .bannerCard>div .communityClass li{
+    width:33%;
+    float:left;
+}
+#main .jkBanner .bannerCard>div .communityClass div {
+	float:left;
+	height:100%;
+	width:100%;
+	font-size:14px;
+	color:#666;
+	text-align:center;
+    padding-top:40px;
+    line-height:20px;
+}
+#main .jkBanner .bannerCard>div .communityClass div.xueCard{
+    background:url(../images/cardxue.jpg) no-repeat top center / 33px 28px
+}
+#main .jkBanner .bannerCard>div .communityClass div.jiaoCard{
+    background:url(../images/cardjiao.jpg) no-repeat top center / 36px 27px
+}
+#main .jkBanner .bannerCard>div .communityClass div.buCard{
+    background:url(../images/cardbu.jpg) no-repeat top center / 22px 30px
+}
+/*就业部分*/
+.jkJiuye {
+    margin-top:140px;
+	height:330px;
+}
+.jkJiuye ul>li:last-child,.jkJiuye ul>li:nth-child(3) {
+	margin-right:0
+}
+.jkJiuye ul>li:nth-child(2),.jkJiuye ul>li:nth-child(3) {
+	width:371px;
+	height:180px;
+	margin-bottom:14px
+}
+.jkJiuye ul>li:nth-child(4),.jkJiuye ul>li:nth-child(5),.jkJiuye ul>li:nth-child(6) {
+	width:243px;
+	height:135px
+}
+.jkJiuye ul>li:last-child {
+	width:242px
+}
+/*基础*/
+.jkBase {
+	margin-top:30px;
+	height:330px;
+}
+.jkBase ul .h2Container {
+	width:230px;
+	height:330px;
+}
+.jkBase ul>li {
+	float:left;
+	margin-right:14px;
+	background:#fff;
+	width:243px;
+	height:158px
+}
+.jkBase ul>li:last-child,.jkBase ul>li:nth-child(4) {
+	margin-right:0
+}
+.jkBase ul>li:nth-child(2),.jkBase ul>li:nth-child(3),.jkBase ul>li:nth-child(4) {
+	margin-bottom:14px
+}
+.jkBase ul>li:nth-child(4),.jkBase ul>li:last-child {
+	width:242px
+}
+/*提高*/
+.jkSku {
+	margin-top:30px;
+	height:330px;
+}
+.jkSku ul .h2Container {
+	width:230px;
+	height:330px;
+}
+.jkSku ul .h2Container .h2img img {
+	margin-top:30px;
+	width:103px;
+	height:94px
+}
+.jkSku ul>li {
+	float:left;
+	margin-right:14px;
+	background:#fff;
+	width:371px;
+	height:158px
+}
+.jkSku ul>li:last-child,.jkSku ul>li:nth-child(3) {
+	margin-right:0
+}
+.jkSku ul>li:nth-child(2),.jkSku ul>li:nth-child(3) {
+	margin-bottom:14px
+}
+/*大咖*/
+.jkDk {
+	margin-top:30px;
+	height:158px;
+}
+.jkDk ul .h2Container {
+	width:230px;
+	height:158px;
+}
+.jkDk ul .h2Container .h2img {
+	height:88px
+}
+.jkDk ul .h2Container .h2img img {
+	margin-top:17px;
+	width:105px;
+	height:72px
+}
+.jkDk ul>li {
+	float:left;
+	margin-right:14px;
+	background:#fff;
+	width:371px;
+	height:158px
+}
+.jkDk ul>li:last-child {
+	margin-right:0
+}
+/*小白*/
+.jkBai {
+	margin-top:30px;
+	height:158px;
+}
+.jkBai ul .h2Container {
+	width:230px;
+	height:158px;
+	text-align:left;
+}
+.jkBai ul .h2Container h2 {
+	border-left:2px solid #35b558
+}
+.jkBai ul .h2Container .h2img {
+	height:88px
+}
+.jkBai ul .h2Container .h2img img {
+	margin-top:17px;
+	width:95px;
+	height:72px
+}
+.jkBai ul>li {
+	float:left;
+	margin-right:14px;
+	background:#fff;
+	width:243px;
+	height:158px;
+	text-align:center
+}
+.jkBai ul>li .baiImg {
+	display:block;
+	height:55px;
+	margin-top:30px
+}
+.jkBai ul>li span {
+	display:block;
+	font-size:18px;
+	color:#333;
+	height:25px;
+	line-height:25px;
+	margin-top:10px
+}
+.jkBai ul>li p {
+	font-size:12px;
+	color:#666;
+	height:16px;
+	line-height:16px;
+	margin-top:5px
+}
+.jkBai ul>li:nth-child(2) img {
+	width:41px;
+	height:55px
+}
+.jkBai ul>li:nth-child(3) img {
+	width:55px;
+	height:48px
+}
+.jkBai ul>li:last-child {
+	margin-right:0;
+	width:242px
+}
+.jkBai ul>li:last-child img {
+	width:55px;
+	height:55px
+}
+.jkBai ul>li:last-child:hover {
+	border:1px solid #fff;
+	box-shadow:none
+}
+/*毕业生展示*/
+.jkStudent {
+	margin-top:30px;
+	height:500px;
+}
+.jkStudent>ul .h2Container {
+	text-align:left;
+	padding-top:10px;
+	width:230px;
+	height:500px;
+}
+.jkStudent>ul .h2Container>ul {
+	padding-left:15px;
+	padding-top:10px;
+	width:100%
+}
+.jkStudent>ul .h2Container>ul>li {
+	float:left;
+	width:56px;
+	height:56px;
+	background:#ccc;
+	margin-right:14px
+}
+.jkStudent>ul .h2Container>ul>li:nth-child(3n) {
+	margin-right:0
+}
+.jkStudent>ul .h2Container>ul>li:nth-child(n+4) {
+	margin-top:14px
+}
+.jkStudent>ul .h2Container>ul>li a {
+	display:block;
+	height:100%
+}
+.jkStudent>ul .h2Container>ul>li a img {
+	width:100%;
+	height:100%
+}
+.jkStudent>ul>li {
+	float:left;
+	margin-right:14px;
+	background:#fff;
+	width:243px;
+	height:243px;
+	text-align:center;
+	padding-top:30px
+}
+.jkStudent>ul>li a {
+	display:block;
+	height:100%
+}
+section.jkStudent ul>li img{
+    width:auto;
+}
+.jkStudent>ul>li .s_pic {
+	display:inline-block;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	border:1px solid #eee
+}
+.jkStudent>ul>li .s_name {
+	display:block;
+	font-size:16px;
+	color:#666;
+	margin-top:10px
+}
+.jkStudent>ul>li .s_job {
+	font-size:12px;
+	color:gray;
+	height:16px;
+	line-height:16px;
+	margin-top:10px
+}
+.jkStudent>ul>li .s_status {
+	font-size:12px;
+	color:gray;
+	height:16px;
+	margin-top:35px
+}
+.jkStudent>ul>li .s_comp {
+	margin-top:5px;
+	height:20px
+}
+.jkStudent>ul>li:nth-child(n+5) {
+	margin-top:14px
+}
+.jkStudent>ul>li:nth-child(4),.jkStudent>ul>li:last-child {
+	width:242px;
+	margin-right:0
+}
+/*关于展示*/
+.jkOrganization {
+	margin-top:30px;
+	height:158px;
+}
+.jkOrganization ul .h2Container {
+	padding-top:10px;
+	width:230px;
+	height:158px;
+	text-align:left
+}
+.jkOrganization ul>li {
+	float:left;
+	margin-right:14px;
+	background:#fff;
+	width:243px;
+	height:158px;
+	text-align:center
+}
+.jkOrganization ul>li .baiImg {
+	display:block;
+	height:55px;
+	margin-top:30px
+}
+.jkOrganization ul>li span {
+	display:block;
+	font-size:18px;
+	color:#333;
+	height:25px;
+	line-height:25px;
+	margin-top:10px;
+	font-weight:500
+}
+.jkOrganization ul>li p {
+	font-size:12px;
+	color:#666;
+	height:16px;
+	line-height:16px;
+	margin-top:5px
+}
+.jkOrganization ul>li:nth-child(2) img {
+	width:55px;
+	height:48px
+}
+.jkOrganization ul>li:nth-child(3) img {
+	width:55px;
+	height:48px
+}
+.jkOrganization ul>li:last-child {
+	margin-right:0;
+	width:242px
+}
+.jkOrganization ul>li:last-child img {
+	width:55px;
+	height:48px
+}

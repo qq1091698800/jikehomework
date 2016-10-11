@@ -1,0 +1,419 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="百度搜索" />
+    <meta name="description" content="百度一下，你就知道" />
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    
+    <!--[if IE] >
+    <style type="text/css" >
+    /*去ie button黑边*/
+    input[type=submit],
+    input[type=reset],
+    input[type=button]{
+    filter:chroma(color=#000000);
+    }
+    </style>
+    <![endif]-->
+    <!--[if IE 6]>
+        <style type="text/css">
+        /*ie6 hover支持*/
+        body { behavior:url("style/csshover.htc"); }
+        </style>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(
+        function () {
+            $(".wd").focus(function () {
+                $(this).css("border-top", "1px #4791ff solid");
+                $(this).css("border-left", "1px #4791ff solid");
+                $(this).css("border-bottom", "1px #4791ff solid");
+            });
+
+            $(".wd").blur(function () {
+                $(this).css("border-top", "1px #b6b6b6 solid");
+                $(this).css("border-left", "1px #b6b6b6 solid");
+                $(this).css("border-bottom", "1px #b6b6b6 solid");
+            });
+        });
+    </script>
+    <![endif]-->
+</head>
+<body>
+    <!--电脑版封装 start-->
+    <div class="wrapper">
+        <!--导航 start-->
+        <ul id="nav">
+            <li>
+                <a class="b" href="http://www.nuomi.com/?cid=002540" title="百度糯米">糯米</a>
+            </li>
+            <li>
+                <a class="b" href="http://news.baidu.com" title="百度新闻">新闻</a>
+            </li>
+            <li>
+                <a class="b" href="http://www.hao123.com" title="上网导航">hao123</a>
+            </li>
+            <li>
+                <a class="b" href="http://map.baidu.com" title="百度地图">地图</a>
+            </li>
+            <li>
+                <a class="b" href="http://v.baidu.com" title="百度视频">视频</a>
+            </li>
+            <li>
+                <a class="b" href="http://tieba.baidu.com" title="百度贴吧">贴吧</a>
+            </li>
+            <li>
+                <a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F" title="登录百度">登录</a>
+            </li>
+            <li class="navlimenu">
+                <a href="http://www.baidu.com/gaoji/preferences.html" title="百度设置">设置</a>
+                <!--设置菜单 start-->
+                <ul class="bdpfmenu">
+                    <li>
+                        <a class="setpref" href="#">搜索设置</a>
+                    </li>
+                    <li>
+                        <a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a>
+                    </li>
+                    <li>
+                        <a href="#">关闭预测</a>
+                    </li>
+                    <li>
+                        <a href="#">搜索历史</a>
+                    </li>
+                </ul>
+                <!--设置菜单 end-->
+            </li>
+        </ul>
+
+        <div class="navRight">
+            <a class="navStart" href="http://www.baidu.com/more/" title="百度更多产品">更多产品</a>
+            <ul>
+                <li class="navtitle">更多产品</li>
+                <li><a href="http://music.baidu.com/"><span class="amusic"></span>音乐</a></li>
+                <li><a href="http://image.baidu.com"><span class="apic"></span>图片</a></li>
+                <li><a href="http://zhidao.baidu.com"><span class="aknow"></span>知道</a></li>
+                <li><a href="http://wenku.baidu.com"><span class="aarticle"></span>文库</a></li>
+                <li><a href="http://top.baidu.com"><span class="arank"></span>风云榜</a></li>
+                <li><a href="http://e.baidu.com/?refer=888"><span class="aad"></span>百度推广</a></li>
+                <li class="navlast"><a href="https://www.baidu.com/more/">全部产品>></a></li>
+            </ul>
+        </div>
+        <!--导航 end-->
+        
+        <!--logo 表单 start-->
+        <div class="main-wrapper">
+            <div id="main">
+                <div class="logo">
+                    <img alt="百度搜索" src="images/bd_logo1.png" width="270" height="129" />
+                </div>
+                <div id="wd_wrap">
+                    <form action="https://www.baidu.com/s" method="get" id="forms">
+                        <input type="text" id="wd" name="wd" class="wd" value="" maxlength="255" autofocus="autofocus" />
+                        <input type="submit" class="wds wdshover" value="百度一下" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--logo 表单 end-->
+
+        <!--footer start-->
+        <div id="footer">
+            <div class="footer-wrapper">
+                <!--二维码推广 start-->
+                <div id="qrcode">
+                    <div class="qrcode-item qrcode-item1">
+                        <div class="qrcode-img"></div>
+                        <div class="qrcode-txt">
+                            <p>
+                                <b>手机百度</b>
+                            </p>
+                            <p>
+                                <span>快人一步</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="qrcode-item qrcode-item2">
+                        <div class="qrcode-img"></div>
+                        <div class="qrcode-txt">
+                            <p>
+                                <b>百度糯米</b>
+                            </p>
+                            <p>
+                                <span>一毛大餐</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--二维码推广 end-->
+                <!--版权信息 start-->
+                <div id="qrcompany">
+                    <p class="line1">
+                        <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                        <a href="http://home.baidu.com/">关于百度</a>
+                        <a href="http://ir.baidu.com/">about baidu</a>
+                    </p>
+                    <p class="line2">
+                        &copy;Baidu <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                        <a href="http://jianyi.baidu.com/">意见反馈</a>
+                        京ICP证030173号
+                        <i class="icrlogo"></i>
+                    </p>
+                </div>
+                <!--版权信息 end-->
+
+            </div>
+        </div>
+        <!--footer end-->
+    </div>
+    <!--电脑版封装 end-->
+
+    <!--手机版封装 start-->
+    <div class="wrapper-phone">
+        <!--手机版头部：天气+用户头像 start-->
+        <div class="header">
+            <div class="boxweather">
+                <div class="weather-pic">
+                    <span class="icon-sun"></span>
+                    <span>20°</span>
+                </div>
+                <div class="weather-txt">
+                    <span>北京</span><br />
+                    <span>空气65</span>
+                </div>
+            </div>
+            <div class="boxuser">
+                <span class="icon-user"></span>
+                <span class="icon-skin"></span>
+            </div>
+        </div>
+        <!--手机版头部：天气+用户头像 end-->
+
+        <!--手机版搜索 start-->
+        <div class="box0 mainform">
+            <img class="logo" src="images/plus_logo.png"/>
+            <form method="get" action="https://www.baidu.com/s">
+                <div class="boxsearch">
+                    <div class="boxinput">
+                        <input type="text" name="wd" />
+                        <div class="selinput">
+                            <span class="icon-mic"></span>
+                            <img src="images/arr-down.png" />
+                        </div>
+                    </div>
+                    <div class="boxbtnsearch">
+                        <input type="submit" value="百度一下" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--手机版搜索 end-->
+
+        <!--手机版导航 start-->
+        <div class="box0 box-nav">
+            <a href="#"><span class="icon-news"></span>新闻</a>
+            <a href="#"><span class="icon-book"></span>小说</a>
+            <a href="#"><span class="icon-video"></span>视频</a>
+            <a href="#"><span class="icon-money"></span>糯米</a>
+            <a href="#"><span class="icon-map"></span>地图</a>
+            <a href="#"><span class="icon-down"></span>更多</a>
+        </div>
+        <!--手机版导航 end-->
+
+        <!--手机版常用网址 start-->
+        <div class="box box-urls">
+            <div class="title">
+                <span>常用网址</span>
+                <div class="more">
+                    <a href="#"><span class="icon-menu"></span></a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">资讯</a></li>
+                <li><a href="#">hao123</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">爱奇艺</a></li>
+                <li><a href="#">美女</a></li>
+                <li><a href="#">音乐</a></li>
+                <li><a href="#">笑话</a></li>
+                <li><a href="#"><span class="icon-plus"></span></a></li>
+            </ul>
+            <div class="clearfx"></div>
+        </div>
+        <!--手机版常用网址 end-->
+
+        <!--手机版实时热点 start-->
+        <div class="box box-hot">
+            <div class="title">
+                <span>实时热点</span>
+                <div class="more">
+                    <a href="#"><span class="icon-refresh"></span>换一批</a>
+                    <a href="#"><span class="icon-menu"></span></a>
+                </div>
+            </div>
+            <ul>
+                <li><i></i><a href="#">解放军征兵视频<span class="hotitem icon-fire"></span></a></li>
+                <li><i></i><a href="#">携子跳江女子获刑</a></li>
+                <li><i></i><a href="#">等红灯遭渣土掩埋</a></li>
+                <li><i></i><a href="#">打碎茶杯赔1103</a></li>
+                <li><i></i><a href="#">打捞35吨死鱼</a></li>
+                <li><i></i><a href="#">拍卖4.5亿钻石</a></li>
+            </ul>
+            <div class="clearfx"></div>
+            <div class="box-footer">
+                <a href="#" class="right">百度风云榜&gt;</a>
+            </div>
+        </div>
+        <!--手机版实时热点 end-->
+
+        <!--手机版百度推荐 start-->
+        <div class="box box-news">
+            <div class="title">
+                <span>百度推荐</span>
+                <div class="more">
+                    <a href="#"><span class="icon-refresh"></span>换一批</a>
+                    <a href="#"><span class="icon-menu"></span></a>
+                </div>
+            </div>
+            <ul>
+                <li class="top1news">
+                    <a href="#">
+                        <img src="images/item.jpg"/>
+                        <div class="outer">
+                            <div class="title2lines">澳洲航班上发现Wi-Fi热点 名为“爆炸装置”</div>
+                            <span class="dt">12:34</span>
+                        </div>
+                        
+                    </a>
+                </li>
+                <li><a class="hotitem icon-fire-after" href="#">国务院：发展住房租赁企业 允许商用房改建为租赁房</a><span class="dt">12:34</span></li>
+                <li><a href="#">云南红河发生4.7级地震 2小时内共震三次</a><span class="dt">12:34</span></li>
+                <li><a href="#">拥有上亿豪车的车库，除了迪拜，云南也有</a><span class="dt">12:34</span></li>
+                <li><a href="#">王思聪助爹重夺首富 父子俩坐拥1982.6亿元财富</a><span class="dt">12:34</span></li>
+                <li><a href="#">甩爪法抓娃娃百发百中？记者亲身实践结果是</a><span class="dt">12:34</span></li>
+                <li><a href="#">晚年慈禧的真实容貌</a><span class="dt">12:34</span></li>
+                <li><a href="#">雷锋生前女友还原真实雷锋</a><span class="dt">12:34</span></li>
+            </ul>
+            <div class="clearfx"></div>
+            <div class="box-footer">
+                <a href="#" class="right">查看更多推荐&gt;</a>
+            </div>
+        </div>
+        <!--手机版百度推荐 end-->
+
+        <!--手机版生活服务 start-->
+        <div class="box box-iconlst">
+            <div class="title">
+                <span>生活服务</span>
+                <div class="more">
+                    <a href="#"><span class="icon-menu"></span></a>
+                </div>
+            </div>
+            <div class="gps-box">
+                <div class="gps-info"><p>点击定位，查看附近位置信息</p></div>
+                <button id="gps-btn">定位</button>
+                <span class="icon-ball"></span>
+            </div>
+            <ul>
+                <li><a href="#"><span class="icon-face1"></span>电影</a></li>
+                <li><a href="#"><span class="icon-face2"></span>团购</a></li>
+                <li><a href="#"><span class="icon-face3"></span>外卖</a></li>
+                <li><a href="#"><span class="icon-face4"></span>打车</a></li>
+                <li><a href="#"><span class="icon-face5"></span>酒店</a></li>
+                <li><a href="#"><span class="icon-face6"></span>美食</a></li>
+                <li><a href="#"><span class="icon-face7"></span>KTV</a></li>
+                <li><a href="#"><span class="icon-face8"></span>充值</a></li>
+                <!--
+                <li><a href="#"><span class="icon-face9"></span>飞机票</a></li>
+                <li><a href="#"><span class="icon-face10"></span>火车票</a></li>
+                <li><a href="#"><span class="icon-face11"></span>汽车票</a></li>
+                <li><a href="#"><span class="icon-face12"></span>公交站</a></li>
+                <li><a href="#"><span class="icon-face13"></span>旅行</a></li>
+                <li><a href="#"><span class="icon-face14"></span>挂号</a></li>
+                <li><a href="#"><span class="icon-face15"></span>门票</a></li>
+                <li><a href="#"><span class="icon-face16"></span>银行</a></li>
+                    -->
+            </ul>
+
+            <div class="clearfx"></div>
+            <div class="box-footer">
+                <a href="#" ><span><img src="images/arr-down.png" /></span>  </a>
+            </div>
+        </div>
+        <!--手机版生活服务 end-->
+
+        <!--手机版购物 start-->
+        <div class="box box-shopping">
+            <div class="title">
+                <span>购物</span>
+                <div class="more">
+                    <a href="#"><span class="icon-refresh"></span>换一个</a>
+                    <a href="#"><span class="icon-menu"></span></a>
+                </div>
+            </div>
+            <a class="shop-item">
+                <div class="shop-pic">
+                </div>
+                <div class="shop-info">
+                    <span>德比家用健腹轮</span>
+                    <ul class="itemdetail">
+                        <li><span>￥</span>29</li>
+                        <li>¥59</li>
+                        <li>|</li>
+                        <li>返20.2元</li>
+                    </ul>
+                    <span>去看看</span>
+                </div>
+                <div class="shop-addr">
+                    京东
+                </div>
+            </a>
+            <ul>
+                <li><a href="#">京东商城</a></li>
+                <li><a href="#">百度糯米</a></li>
+                <li><a href="#">1号店</a></li>
+                <li><a href="#">唯品会</a></li>
+                <li><a href="#">当当网</a></li>
+                <li><a href="#">蘑菇街</a></li>
+                <li><a href="#">淘宝特卖</a></li>
+                <li><a href="#">天猫抢购</a></li>
+            </ul>
+            <div class="clearfx"></div>
+            <div class="box-footer noline">
+                <a href="#" class="right">查看更多&gt; </a>
+            </div>
+        </div>
+        <!--手机版购物 end-->
+
+        <!--手机版扩展 start-->
+        <div class="box box-traffic center">
+            <span>管理我的卡片</span>
+        </div>
+        <!--手机版扩展 end-->
+
+        <!--手机版页脚 start-->
+        <div class="box0 mobile-footer">
+            <ul>
+                <li><a href="#"><span class="icon-face1"></span>百度浏览器，上网提速200%</a></li>
+                <li><a href="#"><span class="icon-face2"></span>手机百度，最省流量的极速搜索APP</a></li>
+                <li><a href="#"><span class="icon-face3"></span>百度推广，让有需求的客户找到你</a></li>
+            </ul>
+            <div class="clearfx"></div>
+            <div class="copyright">
+                <i></i><span class="title">用户反馈</span>
+                <p>
+                    使用百度前必读 Baidu 京ICP证030173号<br />
+                    <i></i>京公网安备11000002000001号
+                </p>
+            </div>
+        </div>
+        <!--手机版页脚 end-->
+    </div>
+    <!--手机版封装 end-->
+</body>
+</html>

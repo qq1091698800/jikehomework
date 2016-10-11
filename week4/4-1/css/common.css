@@ -1,0 +1,28 @@
+﻿/*通用设置*/
+*{
+    margin:0;
+	padding:0;
+    border:0;
+    box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	font-family:微软雅黑,Verdana,Tahoma;
+}
+
+footer,header,nav,section,video {
+	display:block
+}
+
+body {
+	background:#f5f5f5
+}
+a {
+	text-decoration:none;
+    color:#666;
+}
+a:hover{
+    color: #35b558;
+}
+
+ol,ul {
+	list-style:none
+}
