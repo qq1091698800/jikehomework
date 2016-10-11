@@ -1,0 +1,14 @@
+{
+  "name": "homework9-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "libin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

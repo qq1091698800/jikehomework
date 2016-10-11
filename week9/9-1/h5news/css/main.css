@@ -1,0 +1,134 @@
+﻿/*通用设置*/
+*{
+    margin:0;
+	padding:0;
+    border:0;
+    box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	font-family:微软雅黑,Verdana,Tahoma;
+}
+
+a {
+	text-decoration:none;
+    color:#000;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+ol,ul {
+	list-style:none
+}
+
+i{
+    font-style:normal;
+}
+
+.fl{float:left}
+.fr{float:right;}
+
+/*清除浮动*/
+.clearfx{
+    clear:both;
+}
+
+/* banner */
+.banner{
+    width:100%;
+    height:48px;
+    text-align:center;
+    background:#3e98f0;
+    border-bottom:1px solid #5dabf0;
+    position:relative;
+}
+/*logo*/
+.banner .logo{
+    height:25px;
+    margin:10px auto 0;
+}
+.banner .box{
+    height:48px;
+    width:84px;
+}
+.banner .box a{
+    float:left;
+    width: 34px;
+    height: 48px;
+    background: url(../images/icon.png) no-repeat;
+}
+.banner .fl a{
+    margin-left:8px;
+}
+.banner .fr a{
+    margin-right:8px;
+}
+/*4个图标*/
+.banner .box a.fun1{
+    background-position: center 6px;
+    background-size: 40px 500px;
+}
+.banner .box a.fun2{
+    background-position: center -461px;
+    background-size: 40px 500px;
+}
+.banner .box a.fun3{
+    background-position: center -160px;
+    background-size: 40px 500px;
+}
+.banner .box a.fun4{
+    background-position: center -105px;
+    background-size: 40px 500px;
+}
+
+/*新闻栏目导航*/
+.nav{
+    width:100%;
+    height:40px;
+    background:#3e98f0;
+}
+.nav li{
+    float:left;
+    height:20px;
+    margin:10px 0;
+    width:16.6666666%;
+    text-align:center;
+    border-right:1px solid #5dabf0;
+}
+.nav li:last-child{
+    border-right:none;
+}
+.nav li a{
+    color:#fff;
+    font-size:16px;
+}
+
+/*新闻列表*/
+.newslist li{
+    width:100%;
+    padding:8px;
+}
+/*新闻图片*/
+.newslist li img{
+    width:30%;
+    float:left;
+    margin-right:10px;
+}
+/*新闻标题*/
+.newslist li h3{
+    font-size:16px;
+    font-weight:normal;
+    line-height:25px;
+}
+/*新闻时间*/
+.newslist li span{
+    color:#999999;
+    font-size:12px;
+}
+.more{
+    display:block;
+    background:#5dabf0;
+    color:#fff;
+    text-align:center;
+    line-height:30px;
+    cursor:pointer;
+}
